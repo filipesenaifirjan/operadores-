@@ -148,9 +148,90 @@ else{
     Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque!");
 } 
 --------------------------------------------------------------
+Aprendendo o switch case:
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+//aqui temos um único if, que vai passando e conferindo pra ver se é vogal, porém assim fica grande e difícil de ler
+
+if (letra == "a") 
+{
+    Console.WriteLine("Vogal");
+}
+else if (letra == "e")
+{
+    Console.WriteLine("Vogal");
+}
+else if (letra == "i")
+{
+    Console.WriteLine("Vogal");
+}
+else if (letra == "o")
+{
+    Console.WriteLine("Vogal");
+}
+else if (letra == "u")
+{
+    Console.WriteLine("Vogal");
+}
+
+else {
+    Console.WriteLine("Não é uma vogal");
+}
+
+opção um pouco melhor: 
 
 
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+//aqui temos um único if, que vai passando e conferindo pra ver se é vogal
 
+if (letra == "a" ||
+letra == "e" ||  //esse sinal é ou que é OR
+letra == "i" ||
+letra == "o" ||
+letra == "u")
+{
+    Console.WriteLine("vogal");
+}
+else
+{
+    Console.WriteLine("não é uma vogal");
+}
+opção 3: switch case //quando vc tem vários ifs, é preferível usar o switch
+
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+//aqui temos um único if, que vai passando e conferindo pra ver se é vogal
+
+switch (letra)
+{
+case "a":
+case "e":
+case "i":
+case "o":
+case "u":
+Console.WriteLine("vogal");
+break;
+default:
+Console.WriteLine("Não é uma vogal");
+break;
+}
+------------------------------------------------------------
+Operador OR na prática:
+
+bool eMaiorDeIdade = true;
+bool possuiAutorizacaoDoResponsavel = false;
+if (eMaiorDeIdade || possuiAutorizacaoDoResponsavel){
+    Console.WriteLine("entrada liberada");
+}
+//nesse caso, um ou outro sendo verdadeiro, ele já executa o código
+// ele só não vai executar se nenhuma das condições forem verdadeiras
+
+else{
+    Console.WriteLine("entrada não liberada");
+}
+----------------------------------------------------------
+Operador AND na prática:
 
 
 

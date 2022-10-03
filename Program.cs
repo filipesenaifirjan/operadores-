@@ -1,19 +1,11 @@
-﻿int quantidadeEmEstoque = 10; 
-int quantidadeCompra = 2;
-bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
-
-Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
-Console.WriteLine($"Quantidade em compra: {quantidadeCompra}");
-Console.WriteLine($"É possível realizar a venda? {possivelVenda}");
-
-if (quantidadeCompra == 0){
-    Console.WriteLine("Venda inválida");
+﻿bool eMaiorDeIdade = true;
+bool possuiAutorizacaoDoResponsavel = false;
+if (eMaiorDeIdade || possuiAutorizacaoDoResponsavel){
+    Console.WriteLine("entrada liberada");
 }
+//nesse caso, um ou outro sendo verdadeiro, ele já executa o código
+// ele só não vai executar se nenhuma das condições forem verdadeiras
 
- else if(possivelVenda)  
-{
-    Console.WriteLine("Venda realizada.");
-}
 else{
-    Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque!");
-} 
+    Console.WriteLine("entrada não liberada");
+}
