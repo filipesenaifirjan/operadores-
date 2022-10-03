@@ -1,5 +1,7 @@
-# operadores de atribuição
-Operadores de atribuição-em-c#
+# tipos de operadores em c#
+
+Operadores de atribuição
+
 O código está com comentários para facilitar na didática, assim a gente não perde nenhum detalhe na hora que precisar ensinar 
 Assim vai ficar tudo muito bem explicado, rico em detalhes.
  
@@ -90,6 +92,22 @@ Console.WriteLine(a);
 //sempre que for fazer uma operação, prestar atenção nas prioridades
 -------------------------------------------------------
 Convertendo de maneira segura:
+
+string a = "15-";
+
+int b = 0;
+
+int.TryParse(a, out b); //nesse caso, ele espera e tenta converter sem parar o programa e mesmo que dê erro, ele continua..
+//também funciona com int.TryParse(a, out int b); declarando a variável b (tipo inteiro, nesse caso) dentro do parse
+
+//int b = Convert.ToInt32(a);
+
+Console.WriteLine(b);
+Console.WriteLine("Conversão realizada com sucesso!");
+
+-----------------------------------------------------------
+Introdução operadores condicionais:
+
 
 
 
