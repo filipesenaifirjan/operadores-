@@ -1,8 +1,11 @@
-﻿//double a = 4 / 2 + 2;
+﻿string a = "15-";
 
-double a = 4 / (2 + 2);//nesse caso quero que realize a soma primeiro, acrescentando os ()
-Console.WriteLine(a);
+int b = 0;
 
-//O c# obedece as mesmas ordens da matemática, primeiro vai resolver parênteses, depois expoente, depois divisão e multiplicação e em seguida, adição e subtração
+int.TryParse(a, out b); //nesse caso, ele espera e tenta converter sem parar o programa e mesmo que dê erro, ele continua..
+//também funciona com int.TryParse(a, out int b); declarando a variável b (tipo inteiro, nesse caso) dentro do parse
 
-//sempre que for fazer uma operação, prestar atenção nas prioridades
+//int b = Convert.ToInt32(a);
+
+Console.WriteLine(b);
+Console.WriteLine("Conversão realizada com sucesso!");
