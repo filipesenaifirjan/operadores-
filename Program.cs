@@ -1,11 +1,10 @@
-﻿bool eMaiorDeIdade = true;
-bool possuiAutorizacaoDoResponsavel = false;
-if (eMaiorDeIdade || possuiAutorizacaoDoResponsavel){
-    Console.WriteLine("entrada liberada");
-}
-//nesse caso, um ou outro sendo verdadeiro, ele já executa o código
-// ele só não vai executar se nenhuma das condições forem verdadeiras
+﻿bool possuiPresencaMinima = true;
+double media = 7.5;
 
+if (possuiPresencaMinima && media >= 8)
+{
+    Console.WriteLine("Aprovado");
+}
 else{
-    Console.WriteLine("entrada não liberada");
+    Console.WriteLine("Reprovado besta");
 }

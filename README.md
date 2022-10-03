@@ -232,6 +232,23 @@ else{
 }
 ----------------------------------------------------------
 Operador AND na prática:
+O operador and && é quando precisa de passar pela aprovação de duas condições. nesse caso, vc pode ter dez condições, se apenas uma for falsa, não vai dar o ok
+exemplo abaixo:
+
+bool possuiPresencaMinima = true;
+double media = 7.5;
+
+if (possuiPresencaMinima && media >= 8) //vai verificar presença e nota pra dar verdadeiro
+{
+    Console.WriteLine("Aprovado");
+}
+else{
+    Console.WriteLine("Reprovado besta");
+}
+--------------------------------------------------------
+Operador NOT na prática:
+
+
 
 
 
